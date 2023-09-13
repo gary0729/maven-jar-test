@@ -41,12 +41,12 @@
         <repository>
             <id>github</id>
             <name>corp nexus-releases</name>
-            <url>https:// s01.oss.sonatype.org/nexus/content/repositories/releases/</url>
+            <url>https://s01.oss.sonatype.org/nexus/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>
             <id>nexus-snapshot</id>
             <name>corp nexus-snapshot</name>
-            <url>https:// s01.oss.sonatype.org/nexus/content/repositories/snapshots/</url>
+            <url>https://s01.oss.sonatype.org/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
