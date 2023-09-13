@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+  <localRepository>D:\software\apache-maven-3.6.3\repo</localRepository>
+  <pluginGroups>
+  </pluginGroups>
+  <proxies>
+  </proxies>
+
+  <servers>
+  </servers>
+
+  
+  <mirrors>
+     <mirror>                                                                                                                                                                    
+        <id>hwcentral</id>                                                                                                                                                        
+        <mirrorOf>central</mirrorOf>                                                                                                                                              
+        <url>http://maven.cloudartifact.lfg.dragon.tools.huawei.com/artifactory/cbu-maven-public/</url>                                                                       
+      </mirror>
+	  
+      <mirror>                                                                                                                                                                    
+        <id>apache.snapshots</id>                                                                                                                                                        
+        <mirrorOf>apache.snapshots</mirrorOf>                                                                                                                                              
+        <url>http://maven.cloudartifact.lfg.dragon.tools.huawei.com/artifactory/cbu-maven-public/</url>                                                                       
+      </mirror>
+	  
+      <mirror>                                                                                                                                                                    
+        <id>repository.jboss.org</id>                                                                                                                                                        
+        <mirrorOf>repository.jboss.org</mirrorOf>                                                                                                                                              
+        <url>http://maven.cloudartifact.lfg.dragon.tools.huawei.com/artifactory/cbu-maven-public/</url>                                                                       
+      </mirror>	
+  </mirrors>
+
+  <activeProfiles>
+    <activeProfile>central</activeProfile>
+     <activeProfile>JDK1.8</activeProfile>
+  </activeProfiles>
+  
+  <profiles>
+    <profile>
+        <id>JDK1.8</id>
+        <activation>
+            <activeByDefault>true</activeByDefault>
+            <jdk>1.8</jdk>
+        </activation>
+        <properties>
+            <maven.compiler.source>1.8</maven.compiler.source>
+            <maven.compiler.target>1.8</maven.compiler.target>
+            <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+        </properties>
+    </profile>  
+    <profile>
+      <id>central</id>
+      <repositories>
+        <repository>
+          <id>releases</id>
+          <url>https://maven.cloudartifact.lfg.dragon.tools.huawei.com/artifactory/cbu-maven-public/</url>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+      </repositories>
+     <pluginRepositories>
+        <pluginRepository>
+          <id>releases</id>
+          <url>https://maven.cloudartifact.lfg.dragon.tools.huawei.com/artifactory/cbu-maven-public/</url>
+          <releases><enabled>true</enabled></releases>
+          <snapshots><enabled>true</enabled></snapshots>
+        </pluginRepository>
+      </pluginRepositories>
+    </profile>
+         
+  </profiles>
+  
+  <servers>
+    <server>
+      <id>github</id>
+      <username>gary0729</username>
+      <password>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</password>
+    </server>
+  </servers>
+</settings>
